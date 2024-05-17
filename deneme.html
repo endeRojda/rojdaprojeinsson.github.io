@@ -12,7 +12,7 @@
     <div class="arkaplan">
         <nav class="nav">
             <div class="nav-logo">
-                <p>ROJblog .</p>
+                <p>ROJblog.</p>
             </div>
             <div class="nav-menu">
                 <ul>
@@ -35,41 +35,86 @@
         </nav>
 
         <!------------------form kutusu------------------------------------------>
-        <div class="form-bok">
-        <!----------------kayıt formu---------------------->
-            <div class="kayit-formu" id="kayit">
-                <div class="ust">
+        <div class="form-box">
+
+
+        <!----------------giriş formu---------------------------->
+        <div class="giris-kismi" id="giris">
+            <div class="top">
+                <span>Hesabınız yok mı? <a href="#" onclick="register()">Kaydol</a></span><!---emin değilim-->
+                <header>Giriş Yap</header>
+            </div>
+            
+            <div class="giris-kutusu">
+                <input type="text" class="giris-alani" placeholder="Kullanıcı Adı ya da Email">
+                <i class="bx bx-user"></i>
+            </div>
+
+            <div class="giris-kutusu">
+                <input type="password" class="giris-alani" placeholder="Şifre">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="giris-kutusu">
+                <input type="submit" class="submit" value="Kaydol">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check" >
+                    <label for="login-check">Beni Hatırla</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Şifrenizi mi unuttunuz?</a></label>
+                </div>
+            </div>
+        </div>
+
+        <!----------------kayıt formu---------------------------->
+            <div class="kayit-kismi" id="kayit">
+                <div class="top">
                     <span>Hesabınız var mı? <a href="#" onclick="login()">Giriş Yap</a></span><!---emin değilim-->
                     <header>Kaydol</header>
                 </div>
                 <div class="iki-form">
 
                     <div class="giris-kutusu">
-                        <input type="text" class="giris-alani" placeholder="İsminiz">
+                        <input type="text" class="giris-alani" placeholder="İsim">
                         <i class="bx bx-user"></i>
                     </div>
 
                     <div class="giris-kutusu">
-                        <input type="text" class="giris-alani" placeholder="Soyisminiz">
+                        <input type="text" class="giris-alani" placeholder="Soyisim">
                         <i class="bx bx-user"></i>
                     </div>
+                    
+                </div>
+                <div class="giris-kutusu">
+                    <input type="text" class="giris-alani" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
 
-                    <div class="giris-kutusu">
-                        <input type="text" class="giris-alani" placeholder="E Mail">
-                        <i class="bx bx-envelope"></i>
+                <div class="giris-kutusu">
+                    <input type="password" class="giris-alani" placeholder="Şifre">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="giris-kutusu">
+                    <input type="submit" class="submit" value="Kaydol">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check" >
+                        <label for="register-check">Beni Hatırla</label>
                     </div>
-
-
-                    <div class="giris-kutusu">
-                        <input type="password" class="giris-alani" placeholder="Şifreniz">
-                        <i class="bx bx-lock-alt"></i>
+                    <div class="two">
+                        <label><a href="#">Şart & Koşullar</a></label>
                     </div>
-
                 </div>
             </div>
         </div>
 
+
+
+
     </div>
     </body>
 </html>
-
+ 
