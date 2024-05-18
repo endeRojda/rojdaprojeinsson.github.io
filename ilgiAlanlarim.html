@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İlgi Alanlarım</title>
-    <link rel="stylesheet" href="style.css">
-    <!--simge için google fonts bağlantıları-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    <header>
-        <nav class = "navbar">
-            <a href="#" class="logo">RojBlog<span>.</span></a>
-            <ul class="menu-links">
-                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-                <li><a href="anaSayfa.html">Ana Sayfa</a></li>
-                <li><a href="hakkimda.html">Hakkımda</a></li>
-                <li><a href="ilgiAlanlarim.html">ilgi alanlarım</a></li>
-                <li><a href="sehrim.html">şehrim</a></li>
-                <li><a href="mirasimiz.html">Mirasımız</a></li>
-                <li><a href="ozGecmis.html">CV</a></li>
-                <li><a href="iletisim.html">iletişim</a></li>
-            </ul>
-            <span id="menu-btn" class="material-symbols-outlined">menu</span>
-        </nav>
-    </header>
-    <div class="arkaplan-ilgi">
-        <h1>hoşgeldin</h1>
-        <p>gorsel</p>
-    </div>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <title>ROJblog</title>
+    </head>
+    <body>
+    <div class="arkaplan">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>ROJblog.</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="link active">Ana Sayfa</a></li>
+                    <li><a href="hakkimda.html" class="link">Hakkımda </a></li>
+                    <li><a href="ilgiAlanlarim.html" class="link">ilgi Alanlarım</a></li>
+                    <li><a href="sehrim.html" class="link">Şehrim</a></li>
+                    <li><a href="mirasimiz.html" class="link">Mirasımız</a></li>
+                    <li><a href="ozGecmis.html" class="link">cv</a></li>
+                    <li><a href="iletisim.html" class="link">iletişim</a></li>
+                </ul>
+            </div>
 
-  <script src="/js.js"></script>
-</body>
+            <div class="nav-button">
+                <button class="btn white-btn" id="girisBtn" onclick="login()">Giriş Yap</button>
+                <button class="btn" id="kayitBtn" onclick="register()">Kaydol</button>
+            </div>
+
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        
+    </div>
+
+    <script src="/js.js"></script>
+    </body>
 </html>
+ 

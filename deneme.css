@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(gunesli.jpg);
+    background: url(sade.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,8 +20,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    /*background: rgba(39, 39, 39, 0.1);*/
-    background: #000;
+    background: rgba(39, 39, 39, 0.1);
+    
 }
 
 .nav {
@@ -101,7 +101,7 @@ body {
     justify-content: center;
     width: 512px;
     height: 420px;
-    overflow:hidden;
+    overflow: hidden;
     z-index: 2;
 }
 
@@ -224,3 +224,68 @@ header{
     text-decoration: underline;
 }
 
+
+
+@media only screen and (max-width: 900px) {
+    .nav-button{
+        display:none;
+    }
+    .nav-menu.responsive {
+        top: 100px;
+    }
+    .nav-menu {
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(225, 225, 225, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(10px);
+        transition:.3s;
+    }
+.nav-menu ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-menu-btn {
+    display: block;
+}
+
+.nav-menu-btn i{
+    font-size: 25px;
+color:#fff;
+padding: 10px;
+background: rgba(225, 225, 225, 0.2);
+border-radius: 50%;
+cursor: pointer;
+transition: .3s;
+}
+
+
+.nav-menu-btn i:hover{
+    background: rgba(225, 225, 225, 0.15);
+}
+}
+
+@media only screen and(max-width: 540px) {
+    .arkaplan{
+        min-height: 100vh;
+    }
+    .form-box{
+        width: 100%;
+        height: 500px;
+    }
+
+    .giris-kismi, .kayit-kismi{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .kayit-kismi .iki-form {
+        flex-direction: column;
+        gap:0;
+    }
+
+}
